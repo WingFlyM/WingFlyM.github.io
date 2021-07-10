@@ -20,30 +20,32 @@
     var CONFIG = {"hostname":"wingflym.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":13,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="作业&amp;文章">
-<meta property="og:type" content="website">
+  <meta name="description" content="科学计算中的误差    实验2.3：（比较小数被除时的误差影响）对双精度数pi30 &#x3D; 3.141592653589793 与 pi31 &#x3D; 0.000123456789123 做 8位有效数字近似 ppi30 与 ppi31，分别计算它们的绝对误差与相对误差； 计算两个近似值ppi30 与 ppi31比值的8位有效数字近似值 mpp30， 计算该近似比值的绝对误差和相对误差； 123456789">
+<meta property="og:type" content="article">
 <meta property="og:title" content="星星之火，可以燎原">
-<meta property="og:url" content="http://wingflym.github.io/index.html">
+<meta property="og:url" content="http://wingflym.github.io/2021/07/10/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E4%B8%AD%E7%9A%84%E8%AF%AF%E5%B7%AE/index.html">
 <meta property="og:site_name" content="星星之火，可以燎原">
-<meta property="og:description" content="作业&amp;文章">
+<meta property="og:description" content="科学计算中的误差    实验2.3：（比较小数被除时的误差影响）对双精度数pi30 &#x3D; 3.141592653589793 与 pi31 &#x3D; 0.000123456789123 做 8位有效数字近似 ppi30 与 ppi31，分别计算它们的绝对误差与相对误差； 计算两个近似值ppi30 与 ppi31比值的8位有效数字近似值 mpp30， 计算该近似比值的绝对误差和相对误差； 123456789">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-07-10T11:19:17.336Z">
+<meta property="article:modified_time" content="2021-07-10T11:19:17.513Z">
 <meta property="article:author" content="Wing">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://wingflym.github.io/">
+<link rel="canonical" href="http://wingflym.github.io/2021/07/10/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E4%B8%AD%E7%9A%84%E8%AF%AF%E5%B7%AE/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>星星之火，可以燎原</title>
+  <title> | 星星之火，可以燎原</title>
   
 
 
@@ -145,9 +147,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -163,10 +166,9 @@
       <meta itemprop="name" content="星星之火，可以燎原">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
+        <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2021/07/10/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97%E4%B8%AD%E7%9A%84%E8%AF%AF%E5%B7%AE/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -189,7 +191,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <center><font face="kaiti" size="7" color="red">科学计算中的误差<center>
+        <center><font face="kaiti" size="7" color="red">科学计算中的误差<center>
 
 
 
@@ -208,315 +210,49 @@
 </li>
 </ul>
 </center></font></center>
-      
     </div>
 
     
     
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://wingflym.github.io/2021/07/08/%E4%B8%80%E7%BB%B4%E7%83%AD%E4%BC%A0%E5%AF%BC%E6%96%B9%E7%A8%8B%E7%9A%84%E6%B1%82%E8%A7%A3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/cavander.jpg">
-      <meta itemprop="name" content="Wing">
-      <meta itemprop="description" content="作业&文章">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="星星之火，可以燎原">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/07/08/%E4%B8%80%E7%BB%B4%E7%83%AD%E4%BC%A0%E5%AF%BC%E6%96%B9%E7%A8%8B%E7%9A%84%E6%B1%82%E8%A7%A3/" class="post-title-link" itemprop="url">一维热传导方程的求解</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-07-08 18:25:17" itemprop="dateCreated datePublished" datetime="2021-07-08T18:25:17+08:00">2021-07-08</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-09 10:50:19" itemprop="dateModified" datetime="2021-07-09T10:50:19+08:00">2021-07-09</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <center><font size="6" face="kaiti">隐式后向欧拉法求解一维抛物线方程<center>
-
-
-<center><font size="3" face="kaiti">18377***  WingFlyM<center>
-
-
-
-<h3 id="1-求解原理描述"><a href="#1-求解原理描述" class="headerlink" title="1.求解原理描述"></a>1.求解原理描述</h3><img src="/2021/07/08/%E4%B8%80%E7%BB%B4%E7%83%AD%E4%BC%A0%E5%AF%BC%E6%96%B9%E7%A8%8B%E7%9A%84%E6%B1%82%E8%A7%A3/Replace.jpg" width="80%" height="80%" title="Figure2" alt="Figure2">
-
-<img src="/2021/07/08/%E4%B8%80%E7%BB%B4%E7%83%AD%E4%BC%A0%E5%AF%BC%E6%96%B9%E7%A8%8B%E7%9A%84%E6%B1%82%E8%A7%A3/Replace2.jpg" width="80%" height="80%" title="Figure3" alt="Figure3"></center></font></center></center></font></center>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/07/08/%E4%B8%80%E7%BB%B4%E7%83%AD%E4%BC%A0%E5%AF%BC%E6%96%B9%E7%A8%8B%E7%9A%84%E6%B1%82%E8%A7%A3/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://wingflym.github.io/2021/07/07/20210707/">
+    <div class="social-list">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/cavander.jpg">
-      <meta itemprop="name" content="Wing">
-      <meta itemprop="description" content="作业&文章">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="星星之火，可以燎原">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/07/07/20210707/" class="post-title-link" itemprop="url">20210707</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-07-07 22:31:48" itemprop="dateCreated datePublished" datetime="2021-07-07T22:31:48+08:00">2021-07-07</time>
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/images/wechat_channel.jpg">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-08 18:35:10" itemprop="dateModified" datetime="2021-07-08T18:35:10+08:00">2021-07-08</time>
-              </span>
 
-          
-
+            <span class="label">WeChat</span>
+          </a>
         </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <img src="/2021/07/07/20210707/0707.jpg" width="60%" height="40%" title="铭记" alt="铭记">
-
-
-      
     </div>
+  </div>
 
-    
-    
-    
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://wingflym.github.io/2021/07/06/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/cavander.jpg">
-      <meta itemprop="name" content="Wing">
-      <meta itemprop="description" content="作业&文章">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="星星之火，可以燎原">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/07/06/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/" class="post-title-link" itemprop="url">第三篇文章</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-07-06 20:51:07" itemprop="dateCreated datePublished" datetime="2021-07-06T20:51:07+08:00">2021-07-06</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-07 21:17:34" itemprop="dateModified" datetime="2021-07-07T21:17:34+08:00">2021-07-07</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <center><font size="7" face="楷体">迷路的云</font><center>
-
-<center><font size="4" face="楷体">林清玄</font><center>
-
-<p>一群云朵自海面那头飞起，缓缓从他头上飘过。他凝神注视，看那些云飞往山的凹口 他感觉著海上风的流向，判断那群云必会穿过凹口，飞向另一海面夕阳悬挂的位置。</p>
-<p>於是，像平常一样，他斜躺在维多利亚山的山腰，等待著云的流动；偶尔也侧过头看努力升上山的铁轨缆车，叽叽喳喳的向山顶上开去。每次如此坐看缆车他总是感动著，这是一座多麼美丽而有声息的山，沿著山势盖满色泽高雅的别墅，站在高处看，整个香港九龙海岸全入眼底，可以看到海浪翻滚而起的浪花，远远的，那浪花有点像记忆裏河岸的蒲公英，随风一四散，就找到踪迹。</p></center></center></center></center>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/07/06/%E7%AC%AC%E4%B8%89%E7%AF%87%E6%96%87%E7%AB%A0/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/07/08/%E4%B8%80%E7%BB%B4%E7%83%AD%E4%BC%A0%E5%AF%BC%E6%96%B9%E7%A8%8B%E7%9A%84%E6%B1%82%E8%A7%A3/" rel="prev" title="一维热传导方程的求解">
+      <i class="fa fa-chevron-left"></i> 一维热传导方程的求解
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://wingflym.github.io/2021/07/06/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/cavander.jpg">
-      <meta itemprop="name" content="Wing">
-      <meta itemprop="description" content="作业&文章">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="星星之火，可以燎原">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/07/06/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/" class="post-title-link" itemprop="url">第二篇文章</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-07-06 20:49:18" itemprop="dateCreated datePublished" datetime="2021-07-06T20:49:18+08:00">2021-07-06</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-07 10:58:37" itemprop="dateModified" datetime="2021-07-07T10:58:37+08:00">2021-07-07</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <center><font size =7 face="楷体">雨</font><center>
-
-<center><font size =5 face="楷体">郁达夫</font><center>
-
-<p>周作人先生名其书斋曰“苦雨”，恰正与东坡的喜雨亭名相反。其实，北方的雨，却都可喜，因其难得之故。象今年那么大的水灾，也并不是雨多的必然结果；我们应该责备治河的人，不事先预防，只晓得糊涂搪塞，虚糜国帑，一旦有事，就互相推诿，但救目前。人生万事，总得有个变换，方觉有趣；生之于死，喜之于悲，都是如此，推及天时，又何尝不然？无雨哪能见晴之可爱，没有夜也将看不出昼之光明。</p>
-<p>我生长江南，按理是应该不喜欢雨的；但春日暝蒙，花枝枯竭的时候，得几点微雨，又是一位多么可爱的事情！“小楼一夜听春雨”，“<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%9D%8F%E8%8A%B1%E6%98%A5%E9%9B%A8%E6%B1%9F%E5%8D%97/4504512">杏花春雨江南</a>”，“天街小雨润如酥”，从前的诗人，早就先我说过了。夏天的雨，可以杀暑，可以润禾，它的价值的大，更可以不必再说。而秋雨的霏微凄冷，又是别一种境地，昔人所谓“雨到深秋易作霖，萧萧难会此时心”的诗句，就在说秋雨的耐人寻味。至于秋女士的“秋雨秋风愁煞人”的一声长叹，乃别有怀抱者的托辞，人自愁耳，何关雨事。三冬的寒雨，爱的人恐怕不多。但“江关雁声来渺渺，灯昏宫漏听沉沉”的妙处，若非身历其境者决领悟不到。记得曾宾谷曾以《诗品》中语名诗，叫作《赏雨茅屋斋诗集》。他的诗境如何，我不晓得，但“赏雨茅屋”这四个字，真是多么的有趣！尤其是到了冬初秋晚，正当“苍山寒气深，高林霜叶稀”的时节。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -569,6 +305,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E9%AA%8C2-3%EF%BC%9A%EF%BC%88%E6%AF%94%E8%BE%83%E5%B0%8F%E6%95%B0%E8%A2%AB%E9%99%A4%E6%97%B6%E7%9A%84%E8%AF%AF%E5%B7%AE%E5%BD%B1%E5%93%8D%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">实验2.3：（比较小数被除时的误差影响）</span></a></li></ol></div>
       </div>
       <!--/noindex-->
       
